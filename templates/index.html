@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PDF Honeytokens</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-content" style="max-width:1300px">
+
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>PDF Honeytokens</b></h1>
+  </header>
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+    <h3>Generate PDF</h3>
+    <form action="/generate_pdf/" method="post">
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" value=""><br>
+      <label for="stitle">Sub Title:</label><br>
+      <input type="text" id="stitle" name="stitle" value=""><br>
+      <label for="section">Section:</label><br>
+      <input type="text" id="section" name="section" value=""><br>
+      <label for="context">Context:</label><br>
+      <input type="text" id="context" name="context" value=""><br><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" value=""><br><br>
+      <label for="redirect">Redirect URL:</label><br>
+      <input type="text" id="redirect" name="redirect" value=""><br><br>
+      <button>Generate PDF</button>
+    </form> 
+  </div>
+  
+
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+    <h3>Manage Token</h3>
+    <form action="/manage_token/" method="post">
+      <label for="token">Token:</label><br>
+      <input type="text" id="token" name="token" value=""><br>
+      <button>Manage Token</button>
+    </form> 
+    </div>
+    </div>
+  </div>
+</body>
+</html>
